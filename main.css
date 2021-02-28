@@ -1,11 +1,17 @@
 body {
 	background-color: white;
 	color: black;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	min-height: 100vh;
 	margin: 0;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .title {
@@ -21,42 +27,72 @@ label {
 	padding: 3rem;
 	border-radius: 1rem;
 	border: 2px solid black;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .form {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: auto 3rem auto;
 	grid-template-columns: auto auto;
 	grid-gap: 2rem;
-	column-gap: 3rem;
-	justify-content: center;
-	align-items: center;
+	-webkit-column-gap: 3rem;
+	   -moz-column-gap: 3rem;
+	        column-gap: 3rem;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #btn {
 	margin: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	text-align: center;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-grid-column-span: 2;
 	grid-column: span 2;
 	background-color: black;
 	border: 2px solid white;
 	border-radius: 1rem;
 	color: white;
 	padding: 0.6rem 0.7rem;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 #btn:hover {
 	background-color: #ffffff33;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 
 .character-amount-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .number-input {
 	width: 2rem;
@@ -68,9 +104,15 @@ label {
 	padding: 1rem;
 	border: 1px solid #333;
 	height: 2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	word-break: break-all;
 	border-radius: 1rem;
 }
